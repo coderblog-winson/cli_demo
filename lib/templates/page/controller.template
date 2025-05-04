@@ -1,0 +1,41 @@
+class {{className}}Controller extends GetxController with BaseControllerMixin {
+  @override
+  String get builderId => '{{pageName}}';
+
+  {{className}}Controller();
+
+  @override
+  void onInit() {
+    super.onInit();
+  }
+
+  /// Whether to monitor lifecycle events
+  @override
+  bool get listenLifecycleEvent => true;
+
+  /// When listenLifecycle Event is set to true, the following lifecycle methods will be called
+  @override
+  void onDetached() {
+    log('onDetached');
+  }
+
+  @override
+  void onHidden() {
+    log('onHidden');
+  }
+
+  @override
+  void onInactive() {
+    log('onInactive');
+  }
+
+  @override
+  void onPaused() {
+    log('onPaused');
+  }
+
+  @override
+  void onResumed() {
+    log('onResumed');
+  }
+}

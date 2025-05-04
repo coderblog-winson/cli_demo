@@ -1,0 +1,3 @@
+class {{className}}Page extends GetView<{{className}}Controller> {
+  const {{className}}Page({super.key});
+}
